@@ -1,74 +1,105 @@
-<!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Introduction to Knotifir : knotifir" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Introduction to Knotifir</title>
+    <link rel="stylesheet" href="./stylesheets/reveal.min.css">
+    <link rel="stylesheet" href="./stylesheets/default.css" id="theme">
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/shirgroup/introduction">View on GitHub</a>
-
-          <h1 id="project_title">Introduction to Knotifir</h1>
-          <h2 id="project_tagline">knotifir</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/shirgroup/introduction/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/shirgroup/introduction/tarball/master">Download this project as a tar.gz file</a>
+    <script src="./javascripts/reveal.min.js"></script>
+    <style>
+      p.tiny {
+        font-size: .6em;
+      }
+      span.blue {
+        color: #13DAEC;
+      }
+    </style>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+              <h1>KNOTIFIR</h1>
+              <p>a cloud-based, mobile and social calendar app</p>
+              <p class='tiny'>Brought to you by Yifei Xu, Taowei Luo, Qingya Shu, and Ben Jiang, </p>
+              <p class='tiny'>with tributes to a historical Chinese tradition </p>
             </section>
-        </header>
+            <section>
+              <section><h2>People’s pain points ? </h2></section>
+              <section><h3>Calendar App?</h3><p>Lack of social networking!</p></section>
+              <section><h3>Event organizer?</h3><p>More like tickets sellers.</p><p>Don’t encourage people to create their own events.</p></section>
+              <section><h3>Social medium?</h3><p>Shortage of displaying future events.</p></section>
+            </section>
+            <section>
+              <section><h2>People’s need ?</h2></section>
+                <section><p>A more efficient tool to create and share events among contacts and social medium.</p></section>
+                <section><p>A more easy-to-use reminder.</p></section>
+                <section><p>Finding and joining interesting public events, </p><p>and import them to own calendars.</p></section>
+            </section>
+            <section>
+              <section>
+                <h2>Solution</h2>
+                <p>A convenient calendar app meeting needs below:</p>
+              </section>
+              <section><p>Mobile, </p><p>so that users can manage their schedule</p><p> every time and every where.</p></section>
+              <section><p>Supporting 3rd party content provider, </p><p>so that users can import interesting events.</p></section>
+              <section><p>Easy to create events and share them to contacts.</p></section>
+            </section>
+            <section>
+              <section><h1>Knotifir!</h1></section>
+              <section>
+                <h2>What is it? </h2>
+                <p>Knotifir is a cloud-based <span class='blue'>calendar app</span> for <span class='blue'>planning and sharing schedule</span> with people concerned. While its state of the art scheduling feature enables easier <span class='blue'>private event organization</span> among friends, users can also <span class='blue'>discover upcoming public events</span> and import those of their interests.</p>
+              </section>
+            </section>
+            <section>
+              <section><h2>How it works?</h2></section>
+              <section><p>Everyone maintains one or multiple calendar</p></section>
+              <section><p>New created events in calendar can be assigned with tags.</p></section>
+              <section><p>People who followed one calendar gets to see updates and “fork” the event to their own calendars, just like what’s going on at Github. Users can also push events to and invite other users and smart phone contacts.</p></section>
+              <section><p>In addition to personal use, any other 3rd parties with an updating schedule could also leverage the app to reach out to users, including cinemas, theatres, broadcasting companies and so on. Users could find interested events by public hosts and take part in.</p></section>
+            </section>
+            <section>
+              <section><h2>What's more?</section>
+              <section><p>Knotifir can be an efficiency improvement tool. Through publish your schedules, friends can be a supervisor for you. Also, we are planning to develop a plug-in that count users’ working time every day.</p>
+              </section>
+              <section>
+                <p>And also, users can search for local events to discover and share interesting things nearby.</p>
+              </section>
+            </section>
+            <section>
+              <section><h2>Use case</h2></section>
+            </section>
+            <section>
+              <h2>Technologies</h2>
+              <ul>
+                <li>Platforms: Android, IOS planned.</li>
+                <li>Backend: Python + Django + mongoDB</li>
+                <li>Server: Ubuntu 12.04</li>
+              </ul>
+            </section>
+            <section>
+              <section>
+                <h2>Who we are?</h2>
+              </section>
+              <section>
+                <ul>
+                  <li>
+                    <h4>Alvin Yifei Xu</h4>
+                    <p>Senior student in Peking University. Devoted to cloud technology with a good command of techs like Openstack, Openflow.</p>
+                  </li>
+                  <li>
+                    <h4>Taowei Luo</h4>
+                    <p>Senior student in Peking University. Interested in system virtualization, algorithm. One of the best ACM coder in China.</p>
+                  </li>
+                  <li>
+                    <h4>Qingya Shu</h4>
+                    <p>Senior student in Peking University. Devoted to HCI and visualization. Good at UI designing and data visualization.</p>
+                  </li>
+                </ul>
+              </section>
+            </section>
+        </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Introduction to Knotifir maintained by <a href="https://github.com/shirgroup">shirgroup</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <script>
+    Reveal.initialize();
+    </script>
   </body>
 </html>
